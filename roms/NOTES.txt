@@ -1,0 +1,24 @@
+centiped
+centiped1
+centipd2
+centiped2
+centiped3
+
+from schematics
+
+-002 version
+-003 version
+
+-01 version 16k
+-02 version 64k
+
+K1   code rom (64kbits)		
+
+J1   code roms (16kbits)
+F/H1
+E1
+D1
+
+---
+H/J7
+F7
