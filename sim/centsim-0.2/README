@@ -1,0 +1,66 @@
+README for Centipede/Millipede Simulator
+Release 0.02  8/20/94
+Copyright 1994 Eric L. Smith
+
+New features in this release:
+
+  Centipede ROM image no longer needs to be patched.
+  Centipede self-test mode now works.
+  Millipede colors now work.
+
+Needs Atari ROM images, not supplied, which should be placed in a subdirectory
+named "roms"
+
+How to build:
+
+  xmkmf -a
+  make
+
+How to run:
+
+  sim           # small window
+  sim -x2 -y3   # large window
+
+How to play:
+
+  Keep the X cursor in the game window (or the keyboard won't work).  The title
+  bar of the window is convenient as it doesn't matter if it is obscured.
+
+  use "1" or "2" key to start a one or two player game
+  use cursor keys to move shooter
+  use space key to fire  
+
+Options:
+
+  -x<n>  scale pixels up horizontally by <n>
+  -y<n>  scale pixels up vertically by <n>
+  -i<n>  update display every <n>th interrupt (4 on real hardware, default is 16)
+  c      play Centipede (default)
+  m      play Millipede
+
+Known bugs:
+
+1.  Should allow ROM image location to be provided on command line or via
+    an environment variable.
+
+2.  Should simulate EEPROM using a file.
+
+3.  Should I try to hold the keyboard focus even if X cursor is not in the
+    window?
+
+4.  Millipede option switches and other inputs such as self test are not yet
+    implemented.
+
+5.  Need to simulate the trackball instead of the joystick.  Millipede doesn't
+    seem to sample the joystick input frequently enough.
+
+6.  Need to implement a different color strategy instead of allocating planes,
+    so that Millipede doesn't have to use a private color map.
+
+7.  Needs sound!  Write to /dev/audio?  Use a second process?
+
+8.  Needs general event-scheduling mechanism to replace current interrupt and
+    VBL handling.
+
+9.  Need to simulate watchdog timer in order to allow switching in and out of
+    self-test mode at run time.

@@ -1,0 +1,6944 @@
+read tb h 20
+read optsw1 54
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 60
+read tb h 60
+read optsw2 0
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 20
+read tb h 20
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read sw1 ff
+read tb h 20
+read tb h 60
+read js ff
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60
+read tb h 60

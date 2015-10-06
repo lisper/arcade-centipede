@@ -1,0 +1,10 @@
+# Imakefile for Atari simulator
+# Copyright 1994 Eric Smith
+
+SYS_LIBRARIES = -lm
+LOCAL_LIBRARIES = $(XLIB)
+DEPLIBS = $(DEPXLIB)
+SRCS = main.c sim6502.c debugger.c dis6502.c memory.c game.c misc.c display.c
+OBJS = main.o sim6502.o debugger.o dis6502.o memory.o game.o misc.o display.o
+
+ComplexProgramTarget(sim)
