@@ -4,7 +4,8 @@
 
 //`define debug
 `define no_colormap
-`define jam_pf
+//`define jam_pf
+`define dp_pf
 
 module centipede(
 		 input 	      clk_12mhz,
@@ -85,18 +86,19 @@ module centipede(
    
    wire       pload_n;
    wire       write_n;
-   wire       write2_n;
    wire       brw_n;
    
    wire [15:0] pdf;
 
    //
+   wire [7:0]  match_line;
    wire [7:0]  match_sum;
    wire        match_sum_top;
    reg [5:0]   match_sum_hold;
 	       
    wire [3:0]  match_mux;
    wire        match_n;
+   wire        match_true;
    wire [3:0]  mga;
 
    //
@@ -106,8 +108,8 @@ module centipede(
 
    wire [31:0] pfd;
    
-   reg [13:0]  pfd_hold;
-   reg [13:0]  pfd_hold2;
+   reg [29:16]  pfd_hold;
+   reg [29:16]  pfd_hold2;
 
    reg [1:0]  gry;
    wire [1:0]  y;
@@ -127,6 +129,7 @@ module centipede(
 
    wire [10:0] pf_rom1_addr, pf_rom0_addr;
    wire [7:0]  pf_rom1_out, pf_rom0_out;
+   wire [7:0]  pf_rom1_out_rev, pf_rom0_out_rev;
 
    reg [7:0]   pic;
 
@@ -153,6 +156,8 @@ module centipede(
    reg 	       coloren;
 
    wire [1:0]  rama_sel;
+   wire [1:0]  rama_hi;
+   wire [1:0]  rama_lo;
    wire [3:0]  rama;
 
    wire [5:0]  audio;
@@ -177,19 +182,19 @@ module centipede(
    // ------------------------------------------------------------------------
 
    // Synchronizer
-/* verilator lint_off UNOPTFLAT */
+   /* verilator lint_off UNOPTFLAT */
    reg [11:0]  h_counter;
    reg [7:0]   v_counter;
-/* verilator lint_on UNOPTFLAT */
+   /* verilator lint_on UNOPTFLAT */
    wire        v_counter_reset;
 
-   initial
-     h_counter = 0;
+//   initial
+//     h_counter = 0;
    
-   always @(posedge s_12mhz)
-//     if (reset)
-//       h_counter <= 0;
-//     else
+   always @(posedge s_12mhz or posedge reset)
+     if (reset)
+       h_counter <= 0;
+     else
        if (h_counter == 12'hfff)
 	 h_counter <= 12'b110100000000;
        else
@@ -216,24 +221,15 @@ module centipede(
 
    assign v_counter_reset = reset | vreset_n == 0;
 
-//`define old_way
-`ifdef old_way
-   always @(posedge s_256h_n or posedge v_counter_reset)
-     if (v_counter_reset)
-       v_counter <= 0;
-     else
-       v_counter <= v_counter + 8'd1;
-`else
    always @(posedge s_256h_n or posedge reset)
      if (reset)
        v_counter <= 0;
      else
        /* ld# is on positive clock edge */
        if (vreset_n == 0)
-	 v_counter = 0;
+	 v_counter <= 0;
        else
 	 v_counter <= v_counter + 8'd1;
-`endif
    
    assign s_1v   = v_counter[0];
    assign s_2v   = v_counter[1];
@@ -340,7 +336,7 @@ module centipede(
    //---
 `endif
    
-`define orig_phi0
+//`define orig_phi0
 `ifdef orig_phi0
    always @(posedge s_1h)
      if (reset)
@@ -356,8 +352,14 @@ module centipede(
    assign phi0 = ~phi0a;
    assign pac_n = ~phi0a;
 `else
- assign phi0 = s_1h;
- assign pac_n = s_4h_n/*phi0*/;
+   always @(posedge s_1h or posedge reset)
+     if (reset)
+       phi0a <= 1'b0;
+     else
+       phi0a <= ~phi0a;
+
+   assign phi0 = ~phi0a;
+   assign pac_n = ~phi0a;
 `endif
 
    // watchdog?
@@ -409,9 +411,9 @@ module centipede(
    
    assign {rom3_n, rom2_n, rom1_n, rom0_n} =
 					    ({rom_n, ab[12:11]} == 3'b000) ? 4'b1110 :
-					    ({rom_n, ab[12:11]} == 3'b001) ? 4'b1101 :					    
-					    ({rom_n, ab[12:11]} == 3'b010) ? 4'b1011 :					    
-					    ({rom_n, ab[12:11]} == 3'b011) ? 4'b0111 :					    
+					    ({rom_n, ab[12:11]} == 3'b001) ? 4'b1101 :
+					    ({rom_n, ab[12:11]} == 3'b010) ? 4'b1011 :
+					    ({rom_n, ab[12:11]} == 3'b011) ? 4'b0111 :
 					    4'b1111;
 
    assign adecode =
@@ -427,7 +429,13 @@ module centipede(
 		   (ab[13:10] == 4'b1001) ? 10'b0111111111 :
 		   10'b1111111111;
 
-   assign write2_n = ~(s_6mhz & ~write_n);
+//   assign write2_n = ~(s_6mhz & ~write_n);
+   reg write2_n;
+   always @(posedge s_6mhz)
+     if (reset)
+       write2_n <= 0;
+     else
+       write2_n <= write_n;
    
    assign steerclr_n = adecode[9] | write2_n;
    assign watchdog_n = adecode[8] | write2_n;
@@ -449,7 +457,7 @@ module centipede(
    assign in0_n =  ab[1] | adecode[3];
    assign in1_n = ~ab[1] | adecode[3];
    
-   assign pframrd_n = write_n | brw_n;
+   assign pframrd_n = pf_n | brw_n;
    
    assign {pfwr3_n, pfwr2_n, pfwr1_n, pfwr0_n} =
 					({pf_n, write_n, ab[5:4]} == 4'b0000) ? 4'b1110 :
@@ -459,7 +467,8 @@ module centipede(
 					4'b1111;
 
    //
-   assign mob_n = ~(s_256h & s_256hd) & ~(s_256h2d_n & s_256hd);
+//   assign mob_n = ~(s_256h_n & s_256hd) & ~(s_256h2d_n & s_256hd);
+   assign mob_n = ~(s_256h_n | s_256h2d_n);
 
    assign blank_clk = ~s_12mhz & (h_counter[3:0] == 4'b1111);
 
@@ -483,33 +492,41 @@ module centipede(
    
    // motion objects (vertical)
 
-   // the motion object circuitry (vertical) receives pf data and
-   // sync generator circuitry to generate the vertical component of the
-   // 15 from the playfield memory and 1v-128v from the sync generator
+   // the motion object circuitry (vertical) receives pf data and vertical inputs from the
+   // sync generator circuitry to generate the vertical component of the motion object video. PFD8-
+   // 15 from the playfield memory and 1v-128v from the sync generator are compared at F6 and H6.
+   // The output is gated by A7 when a motion object is on one of the sixteen vertical lines and is
+   // latched by E6 and AND gate B7.  A low on B7 pin 8 indicates the presence of a motion object on
+   // one of the vertical lines during non-active video time.  The signal (MATCH) enables the multi-
+   // plexers in the picture data circuitry.
    //
-   // when 256h goes high, 1v,2v,4v and pic0 are sel
-   //
-   // pic7 causes mga0..3 to go high.  This causes the motion object
-   // to bottom
+   // when 256h goes high, 1v,2v,4v and pic0 are selected. When 256h goes low,
+   // the latched output of E6 is selected. The output if D7 is EXCLUSIVE OR gated at E7 and is
+   // sent to the picture data selector circuitry as motion graphics address (MGA0-MGA3). The other
+   // input to EXCLUSIVE OR gate E7 is PIC7 from the playfield code multiplexer circuitry. PIC7
+   // when high causes the output of E7 to be complimented.  For example, if MGA0..3 are low,
+   // pic7 causes MGA0..3 to go high.  This causes the motion object video to be inverted top
+   // to bottom.
 
    // mga0..3 (motion graphics address) from the motion object circuitry,
    //  256h and 256h_n from the sync generator
    // pic0..5 represents the code for the object to be displayed
-   // mga0..3 set on of 8 different combinations of th e8-line by
+   // mga0..3 set on of 8 different combinations of the 8-line by
    //  8-bit blocks of picture video or the 16 line by 8 bit blocks of
    //  motion object video
    //
    // 256h when high selects the playfield picture color codes to be addressed.
    // 256h when low selects the motion object color codes to be addressed
 
-   assign match_sum = { s_1v, s_2v, s_4v, s_8v, s_16v, s_32v, s_64v, s_128v } + pfd[15:8];
-   assign match_sum_top = ~(match_sum[7] & match_sum[6] &  match_sum[5] & match_sum[4]);
+   assign match_line = { s_128v, s_64v, s_32v, s_16v, s_8v, s_4v, s_2v, s_1v };
+   assign match_sum = match_line + pfd[15:8];
+   assign match_sum_top = ~(match_sum[7] & match_sum[6] & match_sum[5] & match_sum[4]);
 
-   always @(posedge s_4h)
+   always @(posedge s_4h_n)
      if (reset)
        match_sum_hold <= 0;
      else
-       match_sum_hold <= { match_sum_top, 1'b0, match_sum[3], match_sum[2], match_sum[1], match_sum[0] };
+       match_sum_hold <= { match_sum_top, 1'b0, match_sum[3:0] };
 
    assign match_mux = s_256h ? { pic[0], s_4v, s_2v, s_1v } : match_sum_hold[3:0];
 
@@ -519,16 +536,23 @@ module centipede(
    assign match_n = match_sum_hold[5] & s_256h_n;
 `endif
 
+   // for debug only
+   assign match_true = (~match_n & s_256h_n) && pfd != 0;
+
    assign mga = { match_mux[3] ^ (pic[7] & s_256h_n),
 		  match_mux[2] ^ pic[7],
 		  match_mux[1] ^ pic[7],
 		  match_mux[0] ^ pic[7] };
    
 //---
+//`define debug_match
 `ifdef debug_match
    always @(posedge s_6mhz)
-     if (hblank & ~match_n && pfd != 0 && pfd != 32'h00003f00 && pfd != 32'h0000003f && pfd != 32'h003f0000)
-       $display("mo: match pfa %x pfd %x mga %x", pfa, pfd, mga);
+     if (hblank & ~match_n && pfa != 0 && pfd_hold != 0)
+       $display("mo: match pfa %x pfd %x mga %x line %x hpos %x (%x)",
+		pfa, pfd, mga,
+		{s_128v, s_64v, s_32v, s_16v, s_8v, s_4v, s_2v, s_1v},
+		pfd_hold[23:16], pfd_hold);
 `endif
 //---
    
@@ -554,16 +578,16 @@ module centipede(
    
    assign y[1] =
 		(area == 2'b00) ? (s_256hd ? 1'b0 : gry[1]) :
-		(area == 2'b01) ? (s_256hd ? 1'b0 : pfd_hold[9]) : 
-		(area == 2'b10) ? (s_256hd ? 1'b0 : pfd_hold[11]) :
-		(area == 2'b11) ? (s_256hd ? 1'b0 : pfd_hold[13]) :
+		(area == 2'b01) ? (s_256hd ? 1'b0 : pfd_hold2[25]) : 
+		(area == 2'b10) ? (s_256hd ? 1'b0 : pfd_hold2[27]) :
+		(area == 2'b11) ? (s_256hd ? 1'b0 : pfd_hold2[29]) :
 		1'b0;
 
    assign y[0] =
 		(area == 2'b00) ? (s_256hd ? 1'b0 : gry[0]) :
-		(area == 2'b01) ? (s_256hd ? 1'b0 : pfd_hold[8]) : 
-		(area == 2'b10) ? (s_256hd ? 1'b0 : pfd_hold[10]) :
-		(area == 2'b11) ? (s_256hd ? 1'b0 : pfd_hold[12]) :
+		(area == 2'b01) ? (s_256hd ? 1'b0 : pfd_hold2[24]) : 
+		(area == 2'b10) ? (s_256hd ? 1'b0 : pfd_hold2[26]) :
+		(area == 2'b11) ? (s_256hd ? 1'b0 : pfd_hold2[28]) :
 		1'b0;
 
    assign line_ram_ctr_load = ~(pload_n | s_256h);
@@ -577,8 +601,15 @@ module centipede(
 	  if (line_ram_ctr_clr)
 	    line_ram_ctr <= 0;
 	  else
-	    if (line_ram_ctr_load)
-	      line_ram_ctr <= pfd_hold[7:0];
+	    if (line_ram_ctr_load) 
+`ifdef debug_match
+	      begin
+		 line_ram_ctr <= pfd_hold[23:16];
+		 $display("line ram ctr <= %x", pfd_hold[23:16]);
+	      end
+`else
+	      line_ram_ctr <= pfd_hold[23:16];
+`endif
 	    else
 	      line_ram_ctr <= line_ram_ctr + 8'b1;
        end
@@ -586,7 +617,14 @@ module centipede(
    assign line_ram_addr = line_ram_ctr;
 
    always @(posedge s_6mhz)
+`ifdef debug
+     if (^line_ram_addr === 1'bX)
+       ;
+     else
+       line_ram[line_ram_addr] <= y;
+`else
      line_ram[line_ram_addr] <= y;
+`endif
 
    assign mr = line_ram[line_ram_addr];
 
@@ -594,9 +632,9 @@ module centipede(
      if (reset)
        gry <= 0;
      else
-       if (~mob_n)
-	 gry <= 2'b11;
-       else
+//       if (~mob_n)
+//	 gry <= 2'b00;
+//       else
 	 gry <= mr;
 
    
@@ -609,7 +647,7 @@ module centipede(
    // When 256H is low and 4H is high, AB4 and AB5 from the MPU address bus is the
    // select output from P6.   The output is applied to multiplexers k6, l6, m6 and n6
    // as select inputs.  When the MPU is accessing the playfield code multiplexer, the
-   // playfield data is eithe rbein read or updated by the MPU.  When 256H is high and 4H
+   // playfield data is either being read or updated by the MPU.  When 256H is high and 4H
    // is low, the inputs frmo the sync generator (128H and 8V) are the selected outputs.
    // These signals then select which bits of the data PFD0-PFD31 are send out via K6, L6
    // M6, and N6 for the playfield codes that eventually are displayed on the monitor.
@@ -635,23 +673,22 @@ module centipede(
    assign pf_rom1_addr = { 1'b0, s_256h, pic[5:0], s_4v, s_2v, s_1v };
    assign pf_rom0_addr = { 1'b0, s_256h, pic[5:0], s_4v, s_2v, s_1v };
 `else
-   // a guess
-   wire xxx;
-   assign xxx = 1'b0/*s_4h*/;
-
-   assign pf_rom1_addr = { (s_256h_n & xxx), s_256h, pic[5:1], mga };
-   assign pf_rom0_addr = { (s_256h_n & xxx), s_256h, pic[5:1], mga };
+   // a guess, based on millipede schematics
+   wire pf_romx_haddr;
+   assign pf_romx_haddr = s_256h_n & pic[0];
+   
+   assign pf_rom1_addr = { pf_romx_haddr, s_256h, pic[5:1], mga };
+   assign pf_rom0_addr = { pf_romx_haddr, s_256h, pic[5:1], mga };
 `endif
+
+   assign pf_rom0_out_rev = { pf_rom0_out[0], pf_rom0_out[1], pf_rom0_out[2], pf_rom0_out[3],
+			      pf_rom0_out[4], pf_rom0_out[5], pf_rom0_out[6], pf_rom0_out[7] };
    
-   assign pf_mux1 = match_n ?
-		    { pf_rom1_out[0], pf_rom1_out[1], pf_rom1_out[2], pf_rom1_out[3],
-		      pf_rom1_out[4], pf_rom1_out[5], pf_rom1_out[6], pf_rom1_out[7] } :
-		    pf_rom1_out[7:0];
+   assign pf_rom1_out_rev = { pf_rom1_out[0], pf_rom1_out[1], pf_rom1_out[2], pf_rom1_out[3],
+			      pf_rom1_out[4], pf_rom1_out[5], pf_rom1_out[6], pf_rom1_out[7] };
    
-      assign pf_mux0 = match_n ?
-		    { pf_rom0_out[0], pf_rom0_out[1], pf_rom0_out[2], pf_rom0_out[3],
-		      pf_rom0_out[4], pf_rom0_out[5], pf_rom0_out[6], pf_rom0_out[7] } :
-		       pf_rom0_out[7:0];
+   assign pf_mux0 = match_n ? 8'b0 : (pic[6] ? pf_rom0_out_rev : pf_rom0_out);
+   assign pf_mux1 = match_n ? 8'b0 : (pic[6] ? pf_rom1_out_rev : pf_rom1_out);
    
    always @(posedge s_6mhz)
      if (reset)
@@ -677,12 +714,20 @@ module centipede(
      else
        area <= { pf_shift1[7], pf_shift0[7] };
 
+`ifdef dp_pf
+   wire [7:0] pf_out;
+`endif
+   
    //
    assign db_in =
 		 ~rom_n ? rom_out :
 		 ~ram0_n ? ram_out :
 		 ~coloram_n ? { 4'b0, coloram_out } :
+`ifdef dp_pf
+                 ~pframrd_n ? pf_out[7:0] :
+`else
 		 ~pframrd_n ? pf[7:0] :
+`endif
 		 ~ea_read_n ? hs_out :
 		 ~in0_n ? playerin_out :
 		 ~in1_n ? joystick_out :
@@ -690,15 +735,16 @@ module centipede(
 		 ~pokey_n ? pokey_out :
 		 8'b0;
 
-`ifdef debug
+`ifdef debug_input
    //---
    always @(posedge s_6mhz)
      begin
-	if (~in0_n) $display("playerin: read%x %x", ab[0], playerin_out);
+	if (~in0_n && ab[0] == 0) $display("playerin: read%x %x", ab[0], playerin_out);
 	if (~in1_n) $display("joystick: read%x %x", ab[0], joystick_out);   
 	if (~swrd_n) $display("switch: read%x %x", ab[0], switch_out);
 	if (~irqres_n & mpu_reset_n) $display("irq: ack");
 //	if (~pokey_n) $display("pokey: read %x -> %x", ab[3:0], pokey_out);
+	if (~pframrd_n) $display("pf: %x -> %x (ab %x pfd %x)", pfa, pf[7:0], ab, pfd);
      end
    //---
 `endif
@@ -707,12 +753,20 @@ module centipede(
 `ifdef jam_pf
    assign pf_sel = { s_8v, s_128h };
 `else
-   assign pf_sel = 
-		   ({s_4h, s_256h} == 2'b00) ? { s_8v, s_128h } :
-		   ({s_4h, s_256h} == 2'b01) ? { s_8v, s_128h } :
-		   ({s_4h, s_256h} == 2'b10) ? { ab[5], ab[4] } :
-		   ({s_4h, s_256h} == 2'b11) ? { ab[5], ab[4] } :
+//   assign pf_sel = 
+//		   ({s_4h, s_256h} == 2'b00) ? 2'b00 :
+//		   ({s_4h, s_256h} == 2'b01) ? { s_8v, s_128h } :
+//		   ({s_4h, s_256h} == 2'b10) ? { ab[5:4] } :
+//		   ({s_4h, s_256h} == 2'b11) ? { ab[5:4] } :
+//		   2'b00;
+ `ifdef dp_pf
+   assign pf_sel = mob_n ? { s_8v, s_128h } :
 		   2'b00;
+ `else
+   assign pf_sel = ~pf_n ? ab[5:4] :
+		   mob_n ? { s_8v, s_128h } :
+		   2'b00;
+ `endif
 `endif
    
    assign pf =
@@ -738,25 +792,51 @@ module centipede(
 
    assign pfa3210 = { s_64h, s_32h, s_16h, s_8h };
    
+`ifdef dp_pf
+   wire pfrd3_n, pfrd2_n, pfrd1_n, pfrd0_n;
+   
+   assign pfa = { pfa7654, pfa3210 };
+
+   assign {pfrd3_n, pfrd2_n, pfrd1_n, pfrd0_n} =
+						(ab[5:4] == 2'b11) ? 4'b0111 :
+						(ab[5:4] == 2'b10) ? 4'b1011 :
+						(ab[5:4] == 2'b01) ? 4'b1101 :
+						(ab[5:4] == 2'b00) ? 4'b1110 :
+						4'b1111;
+   
+   pf_ram_dp pf_ram(
+		    //
+		    .addr_a({ab[9:6], ab[3:0]}),
+		    .din_a(db_out[7:0]),
+		    .dout_a(pf_out),
+		    .ce_a({pfrd3_n, pfrd2_n, pfrd1_n, pfrd0_n}),
+		    .we_a({pfwr3_n, pfwr2_n, pfwr1_n, pfwr0_n}),
+		    //
+		    .addr_b({ pfa7654, pfa3210 }),
+		    .dout_b(pfd),
+		    .ce_b(4'b0)
+		    );
+`else
 //   assign pfa = s_4h_n ?
 //		{ pfa7654, pfa3210 } :
 //		{ ab[9:6], ab[3:0] };
-   //hack
-   assign pfa = (~pfwr3_n | ~pfwr2_n | ~pfwr1_n | ~pfwr0_n) ?
+   //hack - let cpu win
+   assign pfa = (~pfwr3_n | ~pfwr2_n | ~pfwr1_n | ~pfwr0_n | ~pframrd_n) ?
 		{ ab[9:6], ab[3:0] } :
 		{ pfa7654, pfa3210 };
-   
-   // playfield ram
-   pf_ram #(3) pf_ram3(.a(pfa), .din(db_out[7:0]), .dout(pfd[31:24]), .ce(s_2h), .we(pfwr3_n));
-   pf_ram #(2) pf_ram2(.a(pfa), .din(db_out[7:0]), .dout(pfd[23:16]), .ce(s_2h), .we(pfwr2_n));
-   pf_ram #(1) pf_ram1(.a(pfa), .din(db_out[7:0]), .dout(pfd[15: 8]), .ce(s_2h), .we(pfwr1_n));
-   pf_ram #(0) pf_ram0(.a(pfa), .din(db_out[7:0]), .dout(pfd[ 7: 0]), .ce(s_2h), .we(pfwr0_n));
 
-`define debug_pf   
-`ifdef debug_pf
+   // playfield ram
+   pf_ram #(3) pf_ram3(.a(pfa), .din(db_out[7:0]), .dout(pfd[31:24]), .ce(1'b0/*s_2h*/), .we(pfwr3_n));
+   pf_ram #(2) pf_ram2(.a(pfa), .din(db_out[7:0]), .dout(pfd[23:16]), .ce(1'b0/*s_2h*/), .we(pfwr2_n));
+   pf_ram #(1) pf_ram1(.a(pfa), .din(db_out[7:0]), .dout(pfd[15: 8]), .ce(1'b0/*s_2h*/), .we(pfwr1_n));
+   pf_ram #(0) pf_ram0(.a(pfa), .din(db_out[7:0]), .dout(pfd[ 7: 0]), .ce(1'b0/*s_2h*/), .we(pfwr0_n));
+`endif
+   
+   
+//`define debug_pf_wr
+`ifdef debug_pf_wr
    //
    always @(pfwr3_n or pfwr2_n or pfwr1_n or pfwr0_n)
-     if (pfa > 16'h700)
      begin
 	if (~pfwr3_n)
 	  $display("pf: 3 %x <- %x", pfa, db_out[7:0]);
@@ -845,7 +925,7 @@ module centipede(
    // Coin Counter Output
    reg [7:0] cc_latch;
 
-   always @(posedge s_6mhz)
+   always @(posedge s_6mhz or posedge reset)
      if (reset)
        cc_latch <= 0;
      else
@@ -942,10 +1022,8 @@ module centipede(
 	       .r_w_n(rw_n),
 	       .d_in(db_out[7:0]),
 	       .d_out(pokey_out),
-//	       .d_out(),
 	       .p(8'b0),
 	       .aud(audio));
-//assign pokey_out = 8'h10;
    
    //
    reg [7:0]  last_pokey_rd;
@@ -973,14 +1051,28 @@ module centipede(
 
    assign coloram_w_n = write_n | coloram_n;
 
-   assign rama_sel = { coloram_n, (gry[1] | gry[0]) };
+   wire gry0_or_1;
+   assign gry0_or_1 = gry[1] | gry[0];
+     
+   assign rama_sel = { coloram_n, gry0_or_1 };
    
    assign rama = 
-		 (rama_sel == 2'b00) ? { coloram_n ? 2'b11 : ab[3:2], ab[1:0] } :
-		 (rama_sel == 2'b01) ? { coloram_n ? 2'b11 : ab[3:2], ab[1:0] } :
-		 (rama_sel == 2'b10) ? { coloram_n ? 2'b11 : ab[3:2], area[1:0] } :
-		 (rama_sel == 2'b11) ? { coloram_n ? 2'b11 : ab[3:2], gry[1:0] } :
+		 (rama_sel == 2'b00) ? { ab[3:0] } :
+		 (rama_sel == 2'b01) ? { ab[3:0] } :
+		 (rama_sel == 2'b10) ? { {gry0_or_1, 1'b1}, area[1:0] } :
+		 (rama_sel == 2'b11) ? { {gry0_or_1, 1'b1}, gry[1:0] } :
 		 4'b0;
+
+//   assign rama_hi = coloram_n ? {gry0_or_1, 1'b1} : ab[3:2];
+//   
+//   assign rama_lo = 
+//		 (rama_sel == 2'b00) ? ab[1:0] :
+//		 (rama_sel == 2'b01) ? ab[1:0] :
+//		 (rama_sel == 2'b10) ? area[1:0] :
+//		 (rama_sel == 2'b11) ? gry[1:0] :
+//		 4'b0;
+//
+//   assign rama = { rama_hi, rama_lo };
 
    color_ram color_ram(.a(rama[3:0]),
 		       .dout(coloram_out),
@@ -989,19 +1081,33 @@ module centipede(
 
    // output to the top level
 `ifdef no_colormap
+   // bbb_ggg_rrr
    assign rgb_o =
-//hack		 
-//		 area[1:0] == 2'b00 ? 9'b000_000_000 :
-//		 area[1:0] == 2'b01 ? 9'b000_000_111 :
-//		 area[1:0] == 2'b10 ? 9'b000_111_000 :
-//		 area[1:0] == 2'b11 ? 9'b111_000_000 :
-		 gry == 2'b11 & area[1:0] == 2'b00 ? 9'b000_000_000 :
-		 gry == 2'b11 & area[1:0] == 2'b01 ? 9'b000_000_111 :
-		 gry == 2'b11 & area[1:0] == 2'b10 ? 9'b000_111_000 :
-		 gry == 2'b11 & area[1:0] == 2'b11 ? 9'b111_000_000 :
+//hack
+//`define pf_only
+//`define mo_only
+`define pf_and_mo
+ `ifdef pf_only
+		 area[1:0] == 2'b00 ? 9'b000_000_000 :
+		 area[1:0] == 2'b01 ? 9'b000_000_111 :
+		 area[1:0] == 2'b10 ? 9'b000_111_000 :
+		 area[1:0] == 2'b11 ? 9'b111_000_000 :
+ `endif
+ `ifdef mo_only
 		 gry == 2'b00 ? 9'b000_000_111 :
 		 gry == 2'b01 ? 9'b000_111_000 :
 		 gry == 2'b10 ? 9'b111_000_000 :
+		 gry == 2'b11 ? 9'b111_111_111 :
+ `endif
+ `ifdef pf_and_mo
+		 gry == 2'b00 & area[1:0] == 2'b00 ? 9'b000_000_000 :
+		 gry == 2'b00 & area[1:0] == 2'b01 ? 9'b000_000_111 :
+		 gry == 2'b00 & area[1:0] == 2'b10 ? 9'b000_111_000 :
+		 gry == 2'b00 & area[1:0] == 2'b11 ? 9'b111_000_000 :
+		 gry == 2'b01 ? 9'b000_000_111 :
+		 gry == 2'b10 ? 9'b000_111_000 :
+		 gry == 2'b11 ? 9'b111_000_000 :
+ `endif
 		 0;
 `else
    assign rgb_o = 

@@ -17,13 +17,15 @@ module pf_ram(input [7:0] a,
    initial
      begin
 	for (j = 0; j < 256; j = j + 1)
-//	  ram[j] = 0;
+	  begin
 `ifdef verilator	  
-	  jj = which+(j*4);
-	  ram[j] = { 2'b0, jj[5:0] };
+	     jj = which+(j*4);
+	     ram[j] = { 2'b0, jj[5:0] };
 `else
-	  ram[j] = j & 8'h3f;
+	     //ram[j] = j & 8'h3f;
+	     ram[j] = 0;
 `endif
+	  end
      end
 `endif
 
