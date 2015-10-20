@@ -1,0 +1,86 @@
+[*]
+[*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
+[*] Wed Oct  7 14:40:13 2015
+[*]
+[dumpfile] "/files/code/centipede/video/chain.vcd"
+[dumpfile_mtime] "Wed Oct  7 14:38:51 2015"
+[dumpfile_size] 86036974
+[savefile] "/files/code/centipede/video/chain.gtkw"
+[timestart] 0
+[size] 1260 706
+[pos] -41 -62
+*-22.880781 1029059 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 224
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 278
+@28
+tb.clk_12mhz
+tb.reset_n
+tb.reset
+tb.ss_vreset
+@29
+tb.ss_vblank
+@28
+tb.ss_vsync
+tb.hrc0
+tb.hrc1
+tb.hld2
+tb.ss_1h
+tb.ss_2h
+tb.ss_4h
+tb.ss_8h
+tb.ss_16h
+tb.ss_32h
+tb.ss_64h
+tb.ss_128h
+tb.ss_256h
+@200
+-
+@28
+tb.ss_vreset
+tb.vrc0
+tb.ss_1v
+tb.ss_2v
+tb.ss_4v
+tb.ss_8v
+tb.ss_16v
+tb.ss_32v
+tb.ss_64v
+tb.ss_128v
+@22
+tb.ss_vprom_addr[7:0]
+tb.ss_vprom_out[3:0]
+tb.ss_vprom_reg[3:0]
+@200
+-------------
+@28
+tb.vblank
+tb.vsync
+tb.s_1h
+tb.s_2h
+tb.s_4h
+tb.s_8h
+tb.s_16h
+tb.s_32h
+tb.s_64h
+tb.s_128h
+tb.s_256h
+@200
+-
+@28
+tb.s_1v
+tb.s_2v
+tb.s_4v
+tb.s_8v
+tb.s_16v
+tb.s_32v
+tb.s_64v
+tb.s_128v
+@22
+tb.vprom_addr[7:0]
+tb.vprom_out[3:0]
+tb.vprom_reg[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
