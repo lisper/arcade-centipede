@@ -1,0 +1,15 @@
+Centipede
+
+6502a cpu
+4 code roms, sequential, starting at 0x2000
+2 pf image roms
+1 pokey
+
+pf:
+ 2x 2048 byte roms
+ roms form 2kx16 bit memory - each address is 8 pixels of 2 bits
+ pf blocks are 8x8x2 bits
+ 256 unique blocks
+
+stamps: 
+
