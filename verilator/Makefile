@@ -22,7 +22,8 @@ V_SRC = \
 	centipede_verilator.v \
 	$(RTL)/centipede.v $(RTL)/p6502.v $(RTL)/pokey.v \
 	$(RTL)/ram.v $(RTL)/rom.v \
-	$(RTL)/color_ram.v $(RTL)/pf_ram.v  $(RTL)/pf_rom.v \
+	$(RTL)/color_ram.v $(RTL)/pf_ram.v $(RTL)/pf_rom.v \
+	$(RTL)/pf_ram_dp.v \
 	$(RTL)/vprom.v $(RTL)/hs_ram.v
 
 V_DEP = \

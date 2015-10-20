@@ -65,8 +65,7 @@ module centipede_verilator;
    assign vgaGreen = rgb[5:3];
    assign vgaRed   = rgb[2:0];
 
-   assign pxd = { 24'b0, vgaBlue, vgaGreen[2:1], vgaRed };
-//   assign pxd = { 24'b0, rgb };
+   assign pxd = (hblank | vblank) ? 32'b0 : { 24'b0, vgaBlue, vgaGreen[2:1], vgaRed };
 
    assign vs = {31'b0, ~vsync};
    assign hs = {31'b0, ~hsync};

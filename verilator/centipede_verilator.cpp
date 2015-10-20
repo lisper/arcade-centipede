@@ -75,6 +75,19 @@ sw1_deassert(int s)
 	VSW1 |= 1<<s;
 }
 
+void
+dump_ram(void)
+{
+	int i;
+	for (i = 0; i < 256; i++) {
+		printf("%i %02x%02x%02x%02x\n",
+		       i,
+		       top->v__DOT__uut__DOT__pf_ram__DOT__ram3[i],
+		       top->v__DOT__uut__DOT__pf_ram__DOT__ram2[i],
+		       top->v__DOT__uut__DOT__pf_ram__DOT__ram1[i],
+		       top->v__DOT__uut__DOT__pf_ram__DOT__ram0[i]);
+	}
+}
 
 int show_cosim_io;
 
@@ -94,6 +107,7 @@ int main(int argc, char** argv)
     int do_coin1 = 0;
     int do_halt = 0;
     int do_cosim = 0;
+    int do_dumpram = 0;
 
     unsigned int last_pc_value = 0;
     int last_pc_stuck = 0;
@@ -115,6 +129,7 @@ int main(int argc, char** argv)
 		    case 'H': do_halt++; break;
 		    case 'S': do_start1++; break;
 		    case 'C': do_coin1++; break;
+		    case 'D': do_dumpram++; break;
 		    default:
 			    fprintf(stderr, "bad arg? %s\n", argv[i]);
 			    exit(1);
@@ -142,9 +157,10 @@ int main(int argc, char** argv)
 
     VSW1 = 0x54;
     VSW2 = 0x0;
-    PLAYERINPUT = 0x3ff;
-    JS = 0xff;
+    PLAYERINPUT = 0x3df;
+    JS = 0x0;
 
+#if 0
     if (1) {
 	    int i;
 	    for (i = 0; i < 256; i++) {
@@ -160,6 +176,7 @@ int main(int argc, char** argv)
 		    top->v__DOT__uut__DOT__pf_ram3__DOT__ram[i] = r3;
 	    }
     }
+#endif
 
     // main loop
     while (!Verilated::gotFinish()) {
@@ -340,8 +357,9 @@ int main(int argc, char** argv)
 			if (show_min_time && main_time > show_min_time)
 				tfp->dump(main_time);
 
-		if (show_max_time && main_time > show_max_time)
+		if (show_max_time && main_time > show_max_time) {
 			vl_finish("centipede_verilator.cpp",__LINE__,"");
+		}
 	}
 #endif
 
@@ -351,6 +369,10 @@ int main(int argc, char** argv)
     VL_PRINTF("%llu; exit simulation; pc %08x\n", main_time, PC);
 
     top->final();
+
+    if (do_dumpram) {
+	    dump_ram();
+    }
 
     if (tfp)
 	    tfp->close();
