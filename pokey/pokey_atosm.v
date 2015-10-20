@@ -26,13 +26,8 @@ module pokey_counter(clk_i, dat_i,
    output [7:0] out;
    output 	borrow;
 
-//   wire       clk_i;
-//   wire [7:0] dat_i;
-//   wire       freq_ld, start, cnt_en;
-
    reg [7:0]  freq;
    reg [7:0]  out;
-//   wire       borrow;
 
    assign     borrow = (out == 0);
 
@@ -58,7 +53,6 @@ module pokey_basefreq(rst, clk_i, base15, out);
    reg [5:0] div57;
    reg [1:0] div4;
 
-//   wire rst, clk_i, base15;
    assign out = (div57 == 0) && (!base15 || div4 == 0);
    
    always @ (posedge clk_i)
@@ -79,7 +73,6 @@ module pokey_poly4(rst, clk_i, out);
    output out;
 
    reg [3:0] shift;
-//   wire   rst, clk_i;
 
    assign out = shift[3];
 
@@ -97,7 +90,6 @@ module pokey_poly5(rst, clk_i, out);
    output out;
 
    reg [4:0] shift;
-//   wire   rst, clk_i;
 
    assign out = shift[4];
 
@@ -127,7 +119,7 @@ module pokey_poly17(rst, clk_i, short, out, random);
    assign new_bit = shift[16] ~^ shift[11];
 
    // last_short is used to reset the shortened shift register when
-   // shwitching from long to short.
+   // switching from long to short.
    always @ (posedge clk_i)
      if (rst)
        last_short <= 0;
@@ -156,13 +148,7 @@ module pokey_audout(rst, clk_i, dat_i,
    input in, filter_en, filter_in;
 
    output [3:0] out;
-   
-//   wire       rst, clk_i;
-//   wire [7:0] dat_i;
-   wire       audc_we;
-//   wire       poly4, poly5, poly17;
-//   wire       in, filter_en, filter_in;
-//   wire [3:0] out;
+
    reg [3:0]  vol;
    reg 	      vol_only;
    reg 	      no_poly5;
@@ -312,7 +298,6 @@ module pokey_atosm(rst_i,
 
    assign audout = {1'b0, audout0} + {1'b0, audout1} + {1'b0, audout2} + {1'b0, audout3};
    assign rst = (rst_bits == 2'b00) | rst_i;
-//   assign rst = (rst_bits != 0) | rst_i;
 
    assign     ack_o = stb_i;
 
@@ -477,7 +462,7 @@ module pokey_atosm(rst_i,
      if (we_i && stb_i && adr_i == 'he)
 	irqen <= dat_i;
 
-   always @ (posedge clk_i)
+   always @ (posedge clk_i or posedge rst_i)
      if (rst_i)
        rst_bits <= 0;
      else
