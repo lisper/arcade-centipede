@@ -105,6 +105,7 @@ module centipede_top_tb;
    assign rbg8 = rgb != 0 ? 8'hff : 8'h0;
  `else
    assign rgb8 = (hblank | vblank) ? 8'b0 : { rgb[8:6],  rgb[4:3],  rgb[2:0] };
+//      assign rgb8 = (hblank | vblank) ? 8'b0 : { rgb[2:0],  rgb[4:3],  rgb[8:6] };
  `endif 
    
    always @(posedge clk)

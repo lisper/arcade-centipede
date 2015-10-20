@@ -1,0 +1,163 @@
+[*]
+[*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
+[*] Tue Oct 20 01:05:36 2015
+[*]
+[dumpfile] "/files/code/centipede/verif/centipede_tb.vcd"
+[dumpfile_mtime] "Tue Oct 20 01:04:54 2015"
+[dumpfile_size] 39549711
+[savefile] "/files/code/centipede/verif/tb2.gtkw"
+[timestart] 2085613000
+[size] 1407 755
+[pos] -1 -1
+*-20.661423 6236076000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] centipede_top_tb.
+[treeopen] centipede_top_tb.uut.
+[treeopen] centipede_top_tb.uut.p6502.
+[treeopen] centipede_top_tb.uut.pokey.
+[sst_width] 224
+[signals_width] 262
+[sst_expanded] 1
+[sst_vpaned_height] 269
+@28
+centipede_top_tb.clk
+centipede_top_tb.uut.s_6mhz
+centipede_top_tb.uut.s_1h
+centipede_top_tb.uut.s_2h
+centipede_top_tb.uut.s_4h
+centipede_top_tb.uut.s_8h
+centipede_top_tb.uut.s_16h
+centipede_top_tb.uut.s_32h
+centipede_top_tb.uut.s_64h
+centipede_top_tb.uut.s_128h
+centipede_top_tb.uut.s_256h
+centipede_top_tb.uut.s_256h_n
+centipede_top_tb.uut.s_8v
+centipede_top_tb.uut.s_16v
+centipede_top_tb.uut.s_32v
+centipede_top_tb.uut.s_64v
+centipede_top_tb.uut.s_128v
+centipede_top_tb.uut.hblank
+centipede_top_tb.uut.hsync
+@22
+centipede_top_tb.uut.vprom_addr[7:0]
+@28
+centipede_top_tb.uut.vblank
+centipede_top_tb.uut.vsync
+centipede_top_tb.uut.irqres_n
+centipede_top_tb.uut.write2_n
+centipede_top_tb.uut.write_n
+@22
+centipede_top_tb.uut.adecode[9:0]
+@28
+centipede_top_tb.uut.mob_n
+centipede_top_tb.uut.s_256hd
+centipede_top_tb.uut.mr[1:0]
+centipede_top_tb.uut.y[1:0]
+@22
+centipede_top_tb.uut.line_ram_addr[7:0]
+@28
+centipede_top_tb.uut.line_ram_ctr_load
+centipede_top_tb.uut.pload_n
+@22
+centipede_top_tb.uut.pic[7:0]
+centipede_top_tb.uut.pf_rom0_addr[10:0]
+centipede_top_tb.uut.pf_rom1_addr[10:0]
+centipede_top_tb.uut.pf_rom0_out[7:0]
+centipede_top_tb.uut.pf_rom1_out[7:0]
+centipede_top_tb.uut.pfa7654[3:0]
+centipede_top_tb.uut.pfa3210[3:0]
+centipede_top_tb.uut.pfd[31:0]
+@28
+centipede_top_tb.uut.s_4h
+centipede_top_tb.uut.y[1:0]
+centipede_top_tb.uut.mr[1:0]
+centipede_top_tb.uut.gry[1:0]
+centipede_top_tb.uut.area[1:0]
+centipede_top_tb.uut.s_6mhz
+@22
+centipede_top_tb.uut.pfa[7:0]
+centipede_top_tb.uut.pfd_hold[29:16]
+@28
+centipede_top_tb.uut.pf_n
+centipede_top_tb.uut.pf_sel[1:0]
+@22
+centipede_top_tb.uut.pf[7:0]
+@28
+centipede_top_tb.uut.s_256h_n
+centipede_top_tb.uut.match_n
+centipede_top_tb.uut.match_true
+@22
+centipede_top_tb.uut.match_line[7:0]
+centipede_top_tb.uut.match_sum[7:0]
+centipede_top_tb.uut.match_sum_hold[5:0]
+centipede_top_tb.uut.pf_rom0_addr[10:0]
+centipede_top_tb.uut.pic[7:0]
+centipede_top_tb.uut.ab[15:0]
+@28
+centipede_top_tb.uut.rw_n
+centipede_top_tb.uut.s_1h
+@29
+centipede_top_tb.uut.s_2h
+@28
+centipede_top_tb.uut.phi0
+centipede_top_tb.uut.phi2
+@22
+centipede_top_tb.uut.pokey.pokey.random[7:0]
+@28
+centipede_top_tb.uut.reset
+centipede_top_tb.uut.pokey.pokey.rst_bits[1:0]
+centipede_top_tb.uut.pokey.pokey.rst
+centipede_top_tb.uut.pokey.pokey.rst_i
+centipede_top_tb.uut.pokey.pokey.clk_i
+centipede_top_tb.uut.mpu_reset
+centipede_top_tb.uut.s_4h_n
+@22
+centipede_top_tb.uut.db_in[7:0]
+centipede_top_tb.uut.db_out[7:0]
+centipede_top_tb.uut.ab[15:0]
+@28
+centipede_top_tb.uut.rom0_n
+centipede_top_tb.uut.rom1_n
+centipede_top_tb.uut.rom2_n
+centipede_top_tb.uut.rom3_n
+centipede_top_tb.uut.rom_n
+@22
+centipede_top_tb.uut.rom_out[7:0]
+@28
+centipede_top_tb.uut.ram0_n
+centipede_top_tb.uut.coloram_n
+centipede_top_tb.uut.pframrd_n
+centipede_top_tb.uut.ea_read_n
+centipede_top_tb.uut.in0_n
+centipede_top_tb.uut.in1_n
+centipede_top_tb.uut.swrd_n
+centipede_top_tb.uut.pokey_n
+@22
+centipede_top_tb.uut.pokey_out[7:0]
+@28
+centipede_top_tb.uut.pokey.pokey.rst_bits[1:0]
+centipede_top_tb.uut.pokey.pokey.we_i
+centipede_top_tb.uut.pokey.pokey.stb_i
+@22
+centipede_top_tb.uut.pokey.pokey.adr_i[3:0]
+@28
+centipede_top_tb.uut.mob_n
+centipede_top_tb.uut.phi0
+centipede_top_tb.uut.phi2
+centipede_top_tb.uut.brw_n
+centipede_top_tb.uut.rw_n
+centipede_top_tb.uut.pfwr0_n
+centipede_top_tb.uut.pfwr1_n
+centipede_top_tb.uut.pfwr2_n
+centipede_top_tb.uut.pfwr3_n
+@22
+centipede_top_tb.uut.db_out[7:0]
+@28
+centipede_top_tb.uut.pf_n
+centipede_top_tb.uut.write_n
+centipede_top_tb.uut.rw_n
+centipede_top_tb.uut.phi2
+@22
+centipede_top_tb.uut.ab[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

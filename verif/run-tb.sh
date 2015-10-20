@@ -2,7 +2,7 @@
 
 RTL="../rtl/centipede.v ../rtl/p6502.v ../rtl/pokey.v \
      ../rtl/ram.v ../rtl/rom.v \
-     ../rtl/color_ram.v ../rtl/pf_ram.v  ../rtl/pf_rom.v \
+     ../rtl/color_ram.v ../rtl/pf_ram.v  ../rtl/pf_rom.v  ../rtl/pf_ram_dp.v \
      ../rtl/vprom.v ../rtl/hs_ram.v"
 
 INC="+incdir+../6502/orig +incdir+../rtl"
