@@ -23,6 +23,8 @@ static unsigned int rtl_irq_pc;
 
 static unsigned char ram[8192];
 static unsigned char rom[8192];
+static unsigned char pf_ram[1024];
+static int tracing;
 
 int read_roms(void)
 {
@@ -63,9 +65,14 @@ void cosim_6502(Vcentipede_verilator *top,
 		get_6502_regs(&pc, &sp, &sr, &a, &x, &y);
 		sr |= 0x20;
 
-		if (0)
-			printf("sim_pc=%04x sim_sp=%04x sim_sr=%02x; sim_a %02x sim_x %02x sim_y %02x\n",
+//		if (pc == 0x2918) tracing = 1;
+
+		if (tracing) {
+			printf("sim: pc=%04x sp=%04x sr=%02x; a %02x x %02x y %02x\n",
 			       pc, sp, sr, a, x, y);
+			printf("rtl: pc=%04x sp=%04x sr=%02x; a %02x x %02x y %02x\n",
+			       rtl_pc, rtl_sp, rtl_sr, rtl_a, rtl_x, rtl_y);
+		}
 
 		mismatch = 0;
 		if (pc != rtl_pc)
@@ -126,11 +133,34 @@ void cosim_int_event(unsigned int pc, int on)
 	}
 }
 
+void checkram(void)
+{
+	int i, c;
+	c = 0;
+	for (i = 0; i < 0x3ff; i++) {
+		if (ram[i] != _top->v__DOT__uut__DOT__ram__DOT__mem[i]) {
+			printf("ram mismatch @ %04x ; sim %02x rtl %02x\n", 
+			       i, ram[i], _top->v__DOT__uut__DOT__ram__DOT__mem[i]);
+			c++;
+		}
+	}
+	if (c > 2) {
+		printf("excessive mismatches\n");
+		exit(1);
+	}
+}
+
 void memwr(unsigned addr, int v, int PC, int totcycles)
 {
 	if (addr < 0x3ff) {
-		if (0) printf("memwr ram %x <- %x\n", addr, v);
+		if (1) printf("memwr ram %x <- %x (pc=%x)\n", addr, v, PC);
 		ram[addr] = v;
+		checkram();
+		return;
+	}
+
+	if (addr >= 0x400 && addr < 0x7ff) {
+		pf_ram[addr-0x400] = v;
 		return;
 	}
 
@@ -142,8 +172,14 @@ unsigned char memrd(unsigned addr, int PC, int totcycles)
 	unsigned char v;
 
 	if (addr < 0x3ff) {
+		if (0) printf("memrd ram %x -> %x (sim %x) (pc %x)\n",
+			      addr, _top->v__DOT__uut__DOT__ram__DOT__mem[addr], ram[addr], PC);
 		if (0) printf("memrd ram %x -> %x (pc %x)\n", addr, ram[addr], PC);
 		return ram[addr];
+	}
+
+	if (addr >= 0x400 && addr < 0x7ff) {
+		return pf_ram[addr-0x400];
 	}
 
 	if (addr >= 0x2000 && addr < 0x4000) {
@@ -162,10 +198,14 @@ unsigned char memrd(unsigned addr, int PC, int totcycles)
 	case 0x801:
 		return _top->v__DOT__sw2;
 	case 0xc00:
-		v = _top->v__DOT__uut__DOT__vblankd ? 0x70 : 0x30;
+		v = _top->v__DOT__uut__DOT__playerin_out0;
 		return v;
 	case 0xc01:
-		v = 0xff; /* need to grab last coin rd on rtl */
+		v = _top->v__DOT__uut__DOT__playerin_out1;
+		printf("playerin_out0 %x, playerin_out1 %x, sw1 %x, sw2 %x\n",
+		       _top->v__DOT__uut__DOT__playerin_out0,
+		       _top->v__DOT__uut__DOT__playerin_out1,
+		       _top->v__DOT__sw1, _top->v__DOT__sw2);
 		return v;
 	case 0x100a:
 		v = _top->v__DOT__uut__DOT__last_pokey_rd;
