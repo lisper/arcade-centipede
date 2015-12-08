@@ -220,7 +220,8 @@ module bc6502(reset, clk, nmi, irq, rdy, so, di, dout, rw, ma,
 	reg [DBW-1:0] sp_reg;		// SP stack pointer
 	reg	[ABW-1:0] pc_reg;		// PC program counter
 	reg nf,vf,bf,df,im,zf,cf;	// SR status register
-	wire [7:0] sr_reg = {nf,vf,1'b1,bf,df,im,zf,cf};
+//	wire [7:0] sr_reg = {nf,vf,1'b1,bf,df,im,zf,cf};
+   	wire [7:0] sr_reg = {nf,vf,1'b0,bf,df,im,zf,cf};
 
 //	tri [DBW-1:0] res;					// internal result bus
    	wire [DBW-1:0] res;					// internal result bus
@@ -1136,6 +1137,7 @@ module dp_group2(ir,ldx,stxx,d,ci,ni,zi,c,n,z,o);
 		`LDX:	o = d;
 		`DEC:	o = d - 8'd1;
 		`INC:	o = d + 8'd1;
+		default: begin sc = sc; o = o; end
 		endcase
 	end
 
@@ -1493,9 +1495,11 @@ module sequencer(reset, creset, clk, rdy,
 				s_sync); */
 			// End of state advancement
 		end // if (rdy)
+`ifdef SIMULATION
 		if (s_reset1) begin
 			$display("cpu: out of reset ****");
 		end
+`endif
 	   if (0) begin
 		$display("states");
 		$display("\ts_reset=%b s_reset1=%b reset2=%b reset3=%b",s_reset,s_reset1,s_reset2,s_reset3);
