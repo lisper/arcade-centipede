@@ -159,6 +159,12 @@ test_interrupt:
 
   while(1) 
     {
+#if 0
+      if (totcycles > 1000000) {
+	  dump_display_ram();
+	  exit(0);
+      }
+#endif
 #if 1
       if (stepflag) 
 	dobreak(STEP);
@@ -183,7 +189,7 @@ test_interrupt:
       icount++;
 #endif
 
-#if 1
+#if 0
       {
 	      static int ic = 0;
 	      ic++;

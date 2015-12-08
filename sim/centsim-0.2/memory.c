@@ -36,6 +36,8 @@ int slam = 0;
 int start1 = 0;
 int start2 = 0;
 
+int debug_hw_read = 0;
+int debug_hw_write = 0;
 
 char *pokey_rregs[]={
 "POT0", 
@@ -116,11 +118,11 @@ byte MEMRD(unsigned addr, int PC, int totcycles)
       break;
     case OPTSW1:
       result = optionreg1;
-printf("read optsw1 %x\n", result);
+      if (debug_hw_read) printf("read optsw1 %x\n", result);
       break;
     case OPTSW2:
       result = optionreg2;
-printf("read optsw2 %x\n", result);
+      if (debug_hw_read) printf("read optsw2 %x\n", result);
       break;
     case POKEY1:
       if((addr & 0x0f) == 0x0a)
@@ -133,7 +135,7 @@ printf("read optsw2 %x\n", result);
 		{
 		  result = force_val;
 		}
-	      printf ("r0 %x @pc %x\n", result, PC);
+	      if (debug_hw_read) printf ("r0 %x @pc %x\n", result, PC);
 	    }
 	}
       else result = mem[addr].cell;
@@ -144,14 +146,14 @@ printf("read optsw2 %x\n", result);
 	  if (mem [addr | 0xf].cell & 0x03)
 	    result = (rand() >> 12) & 0xff;
 	  if (flagrandom)
-	    printf ("r0 %x @pc %x\n", result, PC);
+		  if (debug_hw_read) printf ("r0 %x @pc %x\n", result, PC);
 	}
       else result = mem[addr].cell;
       break;
     case CENTIPEDE_TRACKBALL_HORIZ:
       result = ((! self_test) << 5) | 
 	(((totcycles & 0x00007000) == 0x00007000) << 6);
-printf("read tb h %x\n", result);
+      if (debug_hw_read) printf("read tb h %x\n", result);
       break;
     case CENTIPEDE_TRACKBALL_VERT:
       result = 0x00;
@@ -165,7 +167,7 @@ printf("read tb h %x\n", result);
 	       ((joystick [0].fire == 0) << 2) |
 	       ((start2            == 0) << 1) |
 	       ((start1            == 0) << 0);
-printf("read sw1 %x\n", result);
+      if (debug_hw_read) printf("read sw1 %x\n", result);
       break;
     case CENTIPEDE_JOYSTICK:
       result = ((joystick [0].right == 0) << 7) |
@@ -176,7 +178,7 @@ printf("read sw1 %x\n", result);
 	       ((joystick [1].left  == 0) << 2) |
 	       ((joystick [1].down  == 0) << 1) |
 	       ((joystick [1].up    == 0) << 0);
-printf("read js %x\n", result);
+      if (debug_hw_read) printf("read js %x\n", result);
       break;
     case MILLIPEDE_TRACKBALL_HORIZ:
       result = (((totcycles & 0x00007000) == 0x00007000) << 6) |
@@ -227,9 +229,10 @@ void MEMWR(unsigned addr, int val, int PC, int totcycles)
 {
   register byte tag;
 
-if (addr >= 0x400 && addr <= 0x800) {
-	printf("wr %04x <- %02x (%02x)\n", addr, val, (addr-0x400)/4);
-}
+  if (debug_hw_write)
+	  if (addr >= 0x400 && addr <= 0x800) {
+		  printf("wr %04x <- %02x (%02x)\n", addr, val, (addr-0x400)/4);
+	  }
 
   if(!(tag=mem[addr].tagw)) mem[addr].cell = val;
   else 

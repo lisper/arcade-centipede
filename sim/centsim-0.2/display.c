@@ -290,6 +290,8 @@ void draw_mobs (void)
       horizontal = ((255 - mem [video_base_address + MOB_HORIZONTAL_OFFSET + i].cell) - 16) * x_scale;
       vertical   = (((255 - mem [video_base_address + MOB_VERTICAL_OFFSET + i].cell) - 8) & 0xff) * y_scale;
 
+      if (0) printf("stamp %d: %02x%02x%02x%02x\n", i, color&0xff, vertical&0xff, horizontal&0xff, picture&0xff);
+
 #ifndef ERASE_MOB_PLANE
       last_mob_horizontal [i] = horizontal;
       last_mob_vertical   [i] = vertical;
@@ -569,3 +571,18 @@ void update_display (void)
 usleep(50000);
     }
 }
+
+void dump_display_ram(void)
+{
+	FILE *f;
+	f = fopen("dump.txt", "w");
+	if (f) {
+		int a, c;
+		for (a = 0x400; a < 0x7c0; a++) {
+			c = mem [a].cell;
+			fprintf(f, "%x %x\n", a, c);
+		}
+		fclose(f);
+	}
+}
+

@@ -1,0 +1,77 @@
+wr 07cf <- 10 (f3)
+wr 07ff <- 39 (ff)
+wr 07ee <- 2c (fb)
+wr 07de <- b7 (f7)
+
+wr 07ce <- 11 (f3)
+wr 07fe <- 39 (ff)
+wr 07ed <- 60 (fb)
+wr 07dd <- ff (f7)
+
+wr 07cd <- f8 (f3)
+wr 07fd <- 79 (ff)
+wr 07ec <- f8 (fb)
+wr 07dc <- 14 (f7)
+
+wr 07cc <- 1c (f3)
+wr 07fc <- 39 (ff)
+wr 07eb <- f0 (fa)
+wr 07db <- 8e (f6)
+
+wr 07cb <- 03 (f2)
+wr 07fb <- 3d (fe)
+wr 07ea <- f0 (fa)
+wr 07da <- 96 (f6)
+
+wr 07ca <- 04 (f2)
+wr 07fa <- 3d (fe)
+wr 07e9 <- f0 (fa)
+wr 07d9 <- 9e (f6)
+read tb h 60
+wr 07c9 <- 05 (f2)
+wr 07f9 <- 3d (fe)
+wr 07e8 <- f0 (fa)
+wr 07d8 <- a6 (f6)
+read tb h 60
+wr 07c8 <- 06 (f2)
+wr 07f8 <- 3d (fe)
+wr 07e7 <- f0 (f9)
+wr 07d7 <- ae (f5)
+read tb h 60
+wr 07c7 <- 07 (f1)
+wr 07f7 <- 3d (fd)
+wr 07e6 <- f0 (f9)
+wr 07d6 <- b6 (f5)
+read tb h 60
+wr 07c6 <- 00 (f1)
+wr 07f6 <- 3d (fd)
+wr 07e5 <- f0 (f9)
+wr 07d5 <- be (f5)
+read tb h 60
+wr 07c5 <- 01 (f1)
+wr 07f5 <- 3d (fd)
+wr 07e4 <- f0 (f9)
+wr 07d4 <- c6 (f5)
+read tb h 60
+wr 07c4 <- 02 (f1)
+wr 07f4 <- 3d (fd)
+wr 07e3 <- f0 (f8)
+wr 07d3 <- ce (f4)
+read tb h 60
+wr 07c3 <- 03 (f0)
+wr 07f3 <- 3d (fc)
+wr 07e2 <- f0 (f8)
+wr 07d2 <- d6 (f4)
+read tb h 60
+wr 07c2 <- 04 (f0)
+wr 07f2 <- 3d (fc)
+wr 07e1 <- f0 (f8)
+wr 07d1 <- de (f4)
+read tb h 60
+wr 07c1 <- 05 (f0)
+wr 07f1 <- 3d (fc)
+wr 07e0 <- f0 (f8)
+wr 07d0 <- e6 (f4)
+read tb h 60
+wr 07c0 <- 06 (f0)
+wr 07f0 <- 39 (fc)
