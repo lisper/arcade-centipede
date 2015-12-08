@@ -1,6 +1,7 @@
 
 //`define no_cpu
 `define bc_cpu
+//`define sim_cpu
 
 `ifdef bc_cpu
  `include "../6502/bc/bc6502.v"
@@ -96,6 +97,38 @@ module p6502(
       end
    endtask
 
+`ifdef never
+   task cpu_wr_mapped;
+      input [12:0] cpu_a;
+      input [7:0]  cpu_d;
+      reg [7:0]    r_a;
+      reg [3:0]    r_w;
+      begin
+	 r_a = { cpu_a[9:6], cpu_a[3:0] };
+
+	 case (cpu_a[5:4])
+	   2'b00: r_w = 4'b1110;
+	   2'b01: r_w = 4'b1101;
+	   2'b10: r_w = 4'b1011;
+	   2'b11: r_w = 4'b0111;
+	 endcase
+	 $display("%x %x -> %x %b", cpu_a, cpu_d, r_a, r_w);
+
+	 if (~r_w[3])
+	   ram3[r_a] = cpu_d;
+	 else
+	   if (~r_w[2])
+	     ram2[r_a] = cpu_d;
+	   else
+	     if (~r_w[1])
+	       ram1[r_a] = cpu_d;
+	     else
+	       if (~r_w[0])
+		 ram0[r_a] = cpu_d;
+      end
+   endtask
+`endif
+
    integer i;
    
    initial
@@ -104,9 +137,11 @@ module p6502(
 	cpu_a = 0;
 	cpu_dout = 0;
 	
+`ifdef never
 	for (i = 'h400; i < 'h7c0; i = i + 1)
 	  cpu_wr(i, 8'h00);
-
+`endif
+	
 	#1000;
 	$display("nocpu: init");
 
@@ -169,21 +204,39 @@ module p6502(
 	
 	cpu_wr_pf(8'hf0, 32'h39f08606);
 	cpu_wr_pf(8'hf1, 32'h3df27e0d);
-	cpu_wr_pf(8'hf2, 32'h3df88384);
-	cpu_wr_pf(8'hf3, 32'h3df88b83);
-	cpu_wr_pf(8'hf4, 32'h3df89382);
-	cpu_wr_pf(8'hf5, 32'h3df8a986);
-	cpu_wr_pf(8'hf6, 32'h3df8a380);
-	cpu_wr_pf(8'hf7, 32'h3df8ab87);
-	cpu_wr_pf(8'hf8, 32'h3df8b386);
-	cpu_wr_pf(8'hf9, 32'h3df8bb85);
-	cpu_wr_pf(8'hfa, 32'h3df8c384);
-	cpu_wr_pf(8'hfb, 32'h3df8cb83);
-	cpu_wr_pf(8'hfc, 32'h39f8dc1c);
+	cpu_wr_pf(8'hf2, 32'h39e88384);
+	cpu_wr_pf(8'hf3, 32'h39e88b83);
+	cpu_wr_pf(8'hf4, 32'h39e89382);
+	cpu_wr_pf(8'hf5, 32'h39e8a986);
+	cpu_wr_pf(8'hf6, 32'h39e8a380);
+	cpu_wr_pf(8'hf7, 32'h39e8ab87);
+	cpu_wr_pf(8'hf8, 32'h39e8b386);
+	cpu_wr_pf(8'hf9, 32'h39e8bb85);
+	cpu_wr_pf(8'hfa, 32'h39e8c384);
+	cpu_wr_pf(8'hfb, 32'h39e8cb83);
+	cpu_wr_pf(8'hfc, 32'h39e8dc1c);
 	cpu_wr_pf(8'hfd, 32'h7960fff8);
 	cpu_wr_pf(8'hfe, 32'h39388211);
 	cpu_wr_pf(8'hff, 32'h390f8710);
 
+	cpu_wr(16'h501, 8'h01);
+	cpu_wr(16'h521, 8'h14);
+	cpu_wr(16'h541, 8'h01);
+	cpu_wr(16'h561, 8'h12);
+	cpu_wr(16'h581, 8'h09);
+
+	cpu_wr(16'h502, 8'h14);
+	cpu_wr(16'h522, 8'h05);
+	cpu_wr(16'h542, 8'h13);
+	cpu_wr(16'h562, 8'h14);
+	cpu_wr(16'h582, 8'h00);
+
+	cpu_wr(16'h503, 8'h1b);
+	cpu_wr(16'h523, 8'h21);
+	cpu_wr(16'h543, 8'h29);
+	cpu_wr(16'h563, 8'h28);
+	cpu_wr(16'h583, 8'h20);
+	
 	#10000;
 #100000000;
 	$finish;
@@ -316,6 +369,7 @@ module p6502(
 //   assign phi2 = clk;
    assign phi2 = ~phi0;
 
+`ifdef SIMULATION
    //
    integer     pccount;
    initial
@@ -329,10 +383,12 @@ module p6502(
 	     if (pccount == 1000/* || $time > 9999999*/)
 	       begin
 		  pccount = 0;
+`ifdef debug_cpu
 		  $display("%t; cpu: pc %x; a=%x x=%x", $time, bc6502.pc_reg, bc6502.a_reg, bc6502.x_reg);
 `ifndef verilator
 		  $fflush;
 		  $flushlog;
+`endif
 `endif
 	       end
 
@@ -352,6 +408,20 @@ module p6502(
 	       end
 	  end
      end
+`endif // SIMULATION
+`endif // bc_cpu
+
+`ifdef sim_cpu
+   reg cpu_rw_n;
+   reg [15:0] cpu_a;
+   reg [7:0] cpu_dout;
+
+   reg [7:0] data;
+
+   assign rw_n = cpu_rw_n;
+   assign a = cpu_a;
+   assign dout = cpu_dout;
+   assign phi2 = ~phi0;
    
 `endif
 

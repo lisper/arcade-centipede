@@ -9,8 +9,7 @@ module pf_rom1(input clk,
    
    reg [7:0] q;
 
-   always @(posedge clk)
-//      always @(a)
+   always @(a)
 `include "../roms/extract/rom_hj7_case.v"
 
    assign d = q;
@@ -23,8 +22,7 @@ module pf_rom0(input clk,
 
    reg [7:0] q;
 
-   always @(posedge clk)
-//      always @(a)
+   always @(a)
 `include "../roms/extract/rom_f7_case.v"
 
    assign d = q;

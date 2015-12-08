@@ -27,15 +27,15 @@ module ram(input clk,
 
    assign dout = d;
 
-   always @(posedge clk)
+   always @(a or ram_read)
      if (reset)
-       d <= 0;
+       d = 0;
      else
        if (ram_read)
-	 d <= mem[a];
+	 d = mem[a];
 
-   always @(posedge clk)
+   always @(a or ram_write)
      if (ram_write)
-       mem[a] <= din;
+       mem[a] = din;
 
 endmodule

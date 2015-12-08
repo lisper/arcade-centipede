@@ -7,7 +7,7 @@ module rom(input clk,
 
    reg [7:0] q;
    
-always @(posedge clk or posedge reset)
+always @(a)   
   if (reset)
     q = 0;
   else
