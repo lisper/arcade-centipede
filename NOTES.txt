@@ -13,3 +13,78 @@ pf:
 
 stamps: 
 
+------------
+
+Inputs
+
+   wire [3:0] led_o;
+
+   wire [7:0] trakball_i;
+   wire [7:0] joystick_i;
+   wire [7:0] sw1_i;
+   wire [7:0] sw2_i;
+   wire [9:0] playerinput_i;
+
+   assign s_1_horiz_dir = trakball_i[7];
+   assign s_2_horiz_dir = trakball_i[6];
+   assign s_1_horiz_ck  = trakball_i[5];
+   assign s_2_horiz_ck  = trakball_i[4];
+   assign s_1_vert_dir  = trakball_i[3];
+   assign s_2_vert_dir  = trakball_i[2];
+   assign s_1_vert_ck   = trakball_i[1];
+   assign s_2_vert_ck   = trakball_i[0];
+
+   assign js1_right = joystick_i[7];
+   assign js1_left = joystick_i[6];
+   assign js1_down = joystick_i[5];
+   assign js1_up = joystick_i[4];
+   assign js2_right = joystick_i[3];
+   assign js2_left = joystick_i[2];
+   assign js2_down = joystick_i[1];
+   assign js2_up = joystick_i[0];
+
+   assign coin_r = coin_ctr_r_drive ? coin_ctr_r_drive : playerinput_i[9];
+   assign coin_c = coin_ctr_c_drive ? coin_ctr_c_drive : playerinput_i[8];
+   assign coin_l = coin_ctr_l_drive ? coin_ctr_l_drive : playerinput_i[7];
+   assign self_test = playerinput_i[6];
+   assign cocktail = playerinput_i[5];
+   assign slam = playerinput_i[4];
+   assign start1 = playerinput_i[3];
+   assign start2 = playerinput_i[2];
+   assign fire2 = playerinput_i[1];
+   assign fire1 = playerinput_i[0];
+
+-----
+
+fire1 fire2
+start1 start2
+coin
+
+js l,r,u,d
+
+-----
+
+robotron
+
+    assign MOVE_UP_1 = JA[0];
+    assign MOVE_DOWN_1 = JA[1];
+    assign MOVE_LEFT_1 = JA[2];
+    assign MOVE_RIGHT_1 = JA[3];
+    assign FIRE_UP_1 = JA[4];
+    assign FIRE_DOWN_1 = JA[5];
+    assign FIRE_LEFT_1 = JA[6];
+    assign FIRE_RIGHT_1 = JA[7];
+
+    assign PLAYER_1_START = BTN[3];
+    assign PLAYER_2_START = BTN[2];
+    assign C_COIN = BTN[1];
+
+start1 start2
+coin
+
+js l,r,u,d
+js l,r,u,d
+
+------
+
+defender

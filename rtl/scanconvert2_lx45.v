@@ -95,6 +95,7 @@ module scanconvert2_lx45(
    wire [7:0]  vga_data;
    wire        vga_ce;
    wire        vga_visable;
+   wire        vga_valid;
    
    reg [10:0] vga_hcount;
    reg [10:0] vga_vcount;
@@ -135,11 +136,13 @@ module scanconvert2_lx45(
 //   assign vga_visable = (vga_hcount < 514/*640*/) && (vga_vcount < 255/*525*/)/* && (vga_vcount > 32)*/;
 //   assign vga_visable = (vga_hcount < 640) && (vga_vcount < 525)/* && (vga_vcount > 32)*/;
 
-////brad   
-////   assign vga_visable = ((vga_hcount >= 24) && (vga_hcount < 640-159)) &&
-////			((vga_vcount >= 0) && (vga_vcount < 494));
-   assign vga_visable = ((vga_hcount >= 0) && (vga_hcount < 640-56)) &&
-			((vga_vcount >= 0) && (vga_vcount <= 480));
+   // cut off parts which are not valid
+   assign vga_valid = (vga_hcount >= 0 && vga_hcount < 640-160/*134*/) &&
+		      (vga_vcount >= 0 && vga_vcount <= 480+2);
+		       
+   // hdmi seems sensative to blanking - use full vga window
+   assign vga_visable = (vga_hcount >= 0 && vga_hcount < 640) &&
+			(vga_vcount >= 0 && vga_vcount <= 480+2);
 
    // front-porch = 16
    // pulse-width = 96
@@ -178,14 +181,9 @@ module scanconvert2_lx45(
 //`define normal_double
 `ifdef flip
    wire [8:0]  v_lo;
-//   wire [7:0]  v_hi;
    wire [8:0]  v_hi;
    
-//   assign v_hi = 240 + vga_hcount[9:1];
-//   assign v_lo = 244 - vga_vcount[8:1];
    assign v_hi = 240 + vga_hcount[9:1];
-//   assign v_lo = 254 - vga_vcount[9:1];
-//      assign v_lo = 508 - vga_vcount[9:1];
    assign v_lo = ~(256 + vga_vcount[9:1]);
 
    assign vga_ram_addr = { 1'b0, v_hi[7:0], v_lo };
@@ -200,7 +198,7 @@ module scanconvert2_lx45(
 `endif
 
    assign vga_ce = vga_visable;
-   assign rgb_o = vga_visable ? vga_data : 8'hff;
+   assign rgb_o = (vga_visable & vga_valid) ? vga_data : /*8'hff*/8'h00;
 
    reg [7:0]   cga_wr_data;
    always @(negedge clk6m)

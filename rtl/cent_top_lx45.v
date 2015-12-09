@@ -254,13 +254,12 @@ module cent_top_lx45(
    wire [15:0] do_unused;
    wire        drdy_unused;
    wire        clkfbout;
-   wire        clkout0, clkout1, clkout2;
-   wire        clkout3_unused, clkout4_unused, clkout5_unused;
+   wire        clkout0, clkout1;
+   wire        clkout2_unused, clkout3_unused, clkout4_unused, clkout5_unused;
 
    // 50*12 = 600Mhz
    // 600Mhz / 24  = 25Mhz (clk_vga)
    // 600Mhz / 50  = 12MHz (clk_cpu)
-   // 600Mhz / 100 =  6MHz (clk_pix)
   PLL_BASE
   #(.BANDWIDTH              ("OPTIMIZED"),
     .CLK_FEEDBACK           ("CLKFBOUT"),
@@ -277,10 +276,6 @@ module cent_top_lx45(
     .CLKOUT1_PHASE          (0.000),
     .CLKOUT1_DUTY_CYCLE     (0.500),
 
-    .CLKOUT2_DIVIDE         (100),
-    .CLKOUT2_PHASE          (0.000),
-    .CLKOUT2_DUTY_CYCLE     (0.500),
-
     .CLKIN_PERIOD           (20.000),
     .REF_JITTER             (0.010))
   pll_base_inst
@@ -288,7 +283,7 @@ module cent_top_lx45(
    (.CLKFBOUT              (clkfbout),
     .CLKOUT0               (clkout0),
     .CLKOUT1               (clkout1),
-    .CLKOUT2               (clkout2),
+    .CLKOUT2               (clkout2_unused),
     .CLKOUT3               (clkout3_unused),
     .CLKOUT4               (clkout4_unused),
     .CLKOUT5               (clkout5_unused),
@@ -301,7 +296,6 @@ module cent_top_lx45(
 
    BUFG clkout0_buf (.O(clk_vga), .I(clkout0));
    BUFG clkout1_buf (.O(clk_cpu), .I(clkout1));
-   BUFG clkout2_buf (.O(clk_pix), .I(clkout2));
 
    // null drivers
    wire blue_s, green_s, red_s, clock_s;
