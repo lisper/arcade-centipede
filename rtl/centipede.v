@@ -42,7 +42,8 @@ module centipede(
 		 output       vsync_o,
 		 output       hblank_o,
 		 output       vblank_o,
-		 output [7:0] audio_o
+		 output [7:0] audio_o,
+		 output	      clk_6mhz_o
 		 );
 
    //
@@ -1189,5 +1190,7 @@ module centipede(
    assign audio_o = { 2'b0, audio };
    assign hblank_o = hblank;
    assign vblank_o = vblank;
+
+   assign clk_6mhz_o = s_6mhz;
    
 endmodule

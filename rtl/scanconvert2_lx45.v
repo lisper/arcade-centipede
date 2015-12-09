@@ -135,15 +135,25 @@ module scanconvert2_lx45(
 //   assign vga_visable = (vga_hcount < 514/*640*/) && (vga_vcount < 255/*525*/)/* && (vga_vcount > 32)*/;
 //   assign vga_visable = (vga_hcount < 640) && (vga_vcount < 525)/* && (vga_vcount > 32)*/;
 
-   assign vga_visable = ((vga_hcount >= 24) && (vga_hcount < 640-159)) &&
-			((vga_vcount >= 0) && (vga_vcount < 494));
-   
+////brad   
+////   assign vga_visable = ((vga_hcount >= 24) && (vga_hcount < 640-159)) &&
+////			((vga_vcount >= 0) && (vga_vcount < 494));
+   assign vga_visable = ((vga_hcount >= 0) && (vga_hcount < 640-56)) &&
+			((vga_vcount >= 0) && (vga_vcount <= 480));
+
+   // front-porch = 16
+   // pulse-width = 96
+   // back-porch = 48
    assign vga_hsync = (vga_hcount >= (640+16) & vga_hcount <= (640+16+96));
-   assign vga_vsync = (vga_vcount >= (480+10) & vga_vcount <= (480+10+2));
+
+   // front-porch = 10
+   // pulse-width = 2
+   // back-porch = 29
+   assign vga_vsync = (vga_vcount > (480+10) & vga_vcount <= (480+10+2));
 
    assign hsync_o = ~vga_hsync;
    assign vsync_o = ~vga_vsync;
-   assign blank_o = 1'b0;
+   assign blank_o = ~vga_visable;
 
    // ----------------------------------------------------
 

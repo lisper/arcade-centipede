@@ -5,7 +5,7 @@
 //
 
 `define sound
-//`define hdmi
+`define hdmi
 `define scan_convert
 
 module cent_top_lx45(
@@ -14,7 +14,6 @@ module cent_top_lx45(
 			      
 		     output 	  vga_hsync,
 		     output 	  vga_vsync,
-/*		     output 	  vga_blank, */
 		     output 	  vga_r,
 		     output 	  vga_g,
 		     output 	  vga_b,
@@ -99,7 +98,6 @@ module cent_top_lx45(
    assign vga_b = vga_rgb[7] | vga_rgb[6] | vga_rgb[5];
    assign vga_g = vga_rgb[4] | vga_rgb[3];
    assign vga_r = vga_rgb[2] | vga_rgb[1] | vga_rgb[0];
-//assign vga_b = 1;
 
    wire clk6m, clk12m, clk25m;
 
@@ -120,7 +118,8 @@ module cent_top_lx45(
 		 .hsync_o(cga_hsync),
 		 .vsync_o(cga_vsync),
 		 .hblank_o(cga_hblank),
-		 .vblank_o(cga_vblank)
+		 .vblank_o(cga_vblank),
+		 .clk_6mhz_o(clk_pix)
 		 );
 
    // clocks and reset
@@ -170,7 +169,7 @@ module cent_top_lx45(
    
    ds_dac ds_output(.clk_i(sysclk_buf),
 		    .res_i(reset),
-		    .dac_i(audio),
+		    .dac_i(audio_o),
 		    .dac_o(dac_o)
 		    );
 
@@ -219,13 +218,13 @@ module cent_top_lx45(
    // 16640 x 1000ns = 16.640us / frame
 
    //
-   assign dvid_red   = (vga_rrr == 3'b0) ? 8'b0 : { vga_rrr,   5'b11111 };
+   assign dvid_red   = (vga_rrr == 3'b0) ? 8'b0 : { vga_rrr, 5'b11111 };
    assign dvid_green = (vga_ggg == 3'b0) ? 8'b0 : { vga_ggg, 5'b11111 };
-   assign dvid_blue  = (vga_bbb == 3'b0) ? 8'b0 : { vga_bbb,  5'b11111 };
+   assign dvid_blue  = (vga_bbb == 3'b0) ? 8'b0 : { vga_bbb, 5'b11111 };
    
-   assign dvid_hsync = hsync;
-   assign dvid_vsync = vsync;
-   assign dvid_blank = blank;
+   assign dvid_hsync = ~vga_hsync;
+   assign dvid_vsync = ~vga_vsync;
+   assign dvid_blank = vga_blank;
 
    dvid_output hdmi(.clk50(sysclk_buf),
 		    .reset(/*reset*/dcm_reset),
