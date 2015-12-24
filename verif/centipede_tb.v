@@ -26,6 +26,8 @@ module centipede_top_tb;
    reg [7:0]  sw1;
    reg [7:0]  sw2;
    reg [9:0] playerinput;
+
+   wire      clk6m;
    
    centipede uut(
 		 .clk_12mhz(clk),
@@ -42,7 +44,8 @@ module centipede_top_tb;
 		 .vsync_o(vsync),
 		 .hblank_o(hblank),
 		 .vblank_o(vblank),
-		 .audio_o(audio)
+		 .audio_o(audio),
+		 .clk_6mhz_o(clk6m)
 		 );
    
    always

@@ -9,25 +9,25 @@
 `define scan_convert
 
 module cent_top_lx45(
-		     output [5:1] led,
-		     input 	  sysclk,
+		     output [5:1]   led,
+		     input 	    sysclk,
 			      
-		     output 	  vga_hsync,
-		     output 	  vga_vsync,
-		     output 	  vga_r,
-		     output 	  vga_g,
-		     output 	  vga_b,
+		     output 	    vga_hsync,
+		     output 	    vga_vsync,
+		     output 	    vga_r,
+		     output 	    vga_g,
+		     output 	    vga_b,
 			      
-		     input 	  switch,
-		     input 	  button1,
-		     input 	  button2,
-		     input 	  button3,
+		     input 	    switch,
+		     input [10:0]   Wing_A_in,
+		     input [6:0]    Wing_B_in,
+		     output [15:11] Wing_A_out,
 			      
-		     output [3:0] tmds,
-		     output [3:0] tmdsb,
+		     output [3:0]   tmds,
+		     output [3:0]   tmdsb,
 			      
-		     output 	  audio_l,
-		     output 	  audio_r
+		     output 	    audio_l,
+		     output 	    audio_r
 		   );
 
    // -----
@@ -62,6 +62,7 @@ module cent_top_lx45(
 
    wire       coin_r, coin_c, coin_l, self_test, cocktail, slam, start1, start2, fire2, fire1;
    
+`ifdef testing
    assign coin_r = 1;
    assign coin_c = 1;
    assign coin_l = 1;
@@ -75,6 +76,26 @@ module cent_top_lx45(
 
 //   assign playerinput_i = { coin_r, coin_c, coin_l, self_test, cocktail, slam, start1, start2, fire2, fire1 };
    assign playerinput_i = 10'b111_101_11_11;
+`else
+   assign coin_r = Wing_A_in[0];
+   assign coin_c = 1;
+   assign coin_l = 1;
+   assign self_test = 1;
+   assign cocktail = 0;
+   assign slam = 1;
+   assign start1 = Wing_A_in[1];
+   assign start2 = Wing_A_in[2];
+   assign fire2 = 1;
+   assign fire1 = Wing_B_in[6];
+
+   assign playerinput_i = { coin_r, coin_c, coin_l, self_test, cocktail, slam, start1, start2, fire2, fire1 };
+
+   assign Wing_A_out[11] = led_o[0];
+   assign Wing_A_out[12] = led_o[1];
+   assign Wing_A_out[13] = led_o[2];
+   assign Wing_A_out[14] = led_o[3];
+   assign Wing_A_out[15] = reset;
+`endif
        
    assign led[1] = led_o[0];
    assign led[2] = led_o[1];

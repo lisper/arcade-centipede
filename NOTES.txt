@@ -88,3 +88,15 @@ js l,r,u,d
 ------
 
 defender
+
+------
+
+TOTAL
+
+fire1 fire2
+start1 start2
+coin
+
+js l,r,u,d
+js l,r,u,d
+
